@@ -1,0 +1,621 @@
+{
+  "leads": [
+    {
+      "id": "lead_1775566507488",
+      "mobile": "8849284046",
+      "name": "Kush 4",
+      "city": "Ghaziabad",
+      "status": "APPOINTMENT_BOOKED",
+      "source": "app",
+      "selectedFosId": "fos001",
+      "selectedFosName": "Noida Sector 62 Hub",
+      "appointmentDate": "2026-04-13",
+      "otp": null,
+      "statusHistory": [
+        {
+          "status": "LEAD_CREATED",
+          "timestamp": "2026-04-07T12:55:07.489Z",
+          "note": "Lead created via OTP request"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-07T12:55:22.086Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T12:55:26.469Z",
+          "note": "Selected FOS: Noida Sector 62 Hub (DLNOI01-CH-1-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-07T12:55:38.681Z",
+          "note": "Appointment booked for 2026-04-09 at Noida Sector 62 Hub"
+        },
+        {
+          "status": "DROPPED",
+          "timestamp": "2026-04-07T14:26:56.712Z",
+          "note": "Dropped by admin"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-07T14:54:42.505Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T14:54:45.243Z",
+          "note": "Selected FOS: Noida Sector 62 Hub (DLNOI01-CH-1-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-07T14:55:21.400Z",
+          "note": "Appointment booked for 2026-04-13 at Noida Sector 62 Hub"
+        }
+      ],
+      "isDeleted": false,
+      "createdAt": "2026-04-07T12:55:07.491Z",
+      "updatedAt": "2026-04-07T14:55:21.400Z",
+      "dropOffStage": "APPOINTMENT_BOOKED"
+    },
+    {
+      "id": "lead_1775573375777",
+      "mobile": "8849284043",
+      "name": "Kush2",
+      "city": "Faridabad",
+      "status": "CONVERTED_TO_SPRO",
+      "source": "app",
+      "selectedFosId": "fos001",
+      "selectedFosName": "Noida Sector 62 Hub",
+      "appointmentDate": "2026-04-09",
+      "otp": null,
+      "statusHistory": [
+        {
+          "status": "LEAD_CREATED",
+          "timestamp": "2026-04-07T14:49:35.778Z",
+          "note": "Lead created via OTP request"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-07T14:49:50.597Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T14:50:46.371Z",
+          "note": "Selected FOS: Noida Sector 62 Hub (DLNOI01-CH-1-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-07T14:50:58.892Z",
+          "note": "Appointment booked for 2026-04-09 at Noida Sector 62 Hub"
+        },
+        {
+          "status": "VISITED_FOS",
+          "timestamp": "2026-04-07T14:53:35.504Z",
+          "note": "Driver visited FOS — marked by admin"
+        },
+        {
+          "status": "CONVERTED_TO_SPRO",
+          "timestamp": "2026-04-07T14:53:49.410Z",
+          "note": "Lead converted to SPro — onboarding complete"
+        }
+      ],
+      "isDeleted": false,
+      "createdAt": "2026-04-07T14:49:35.778Z",
+      "updatedAt": "2026-04-07T14:53:49.410Z"
+    },
+    {
+      "id": "lead_1775573516151",
+      "mobile": "6353131826",
+      "name": "Kush 5t",
+      "city": "Gurugram",
+      "status": "APPOINTMENT_BOOKED",
+      "source": "app",
+      "selectedFosId": "fos004",
+      "selectedFosName": "Gurugram Cyber City Hub",
+      "appointmentDate": "2026-04-09",
+      "otp": null,
+      "statusHistory": [
+        {
+          "status": "LEAD_CREATED",
+          "timestamp": "2026-04-07T14:51:56.151Z",
+          "note": "Lead created via OTP request"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-07T14:52:14.170Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T14:52:27.074Z",
+          "note": "Selected FOS: Greater Noida Pari Chowk Hub (DLGNO01-CH-2-CHL)"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T14:52:51.215Z",
+          "note": "Selected FOS: Greater Noida Pari Chowk Hub (DLGNO01-CH-2-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-07T14:53:04.070Z",
+          "note": "Appointment booked for 2026-04-30 at Greater Noida Pari Chowk Hub"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-07T14:54:15.575Z",
+          "note": "Booking cancelled (was 2026-04-30)"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-08T09:57:12.133Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-08T09:57:51.501Z",
+          "note": "Selected FOS: Gurugram Cyber City Hub (DLGGN01-CH-1-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T09:58:08.877Z",
+          "note": "Appointment booked for 2026-04-10 at Gurugram Cyber City Hub"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T10:00:08.104Z",
+          "note": "Rescheduled from 2026-04-10 to 2026-04-30"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T10:01:27.173Z",
+          "note": "Rescheduled from 2026-04-30 to 2026-04-09"
+        }
+      ],
+      "isDeleted": false,
+      "createdAt": "2026-04-07T14:51:56.151Z",
+      "updatedAt": "2026-04-08T10:01:27.173Z",
+      "selectedFosCode": "DLGGN01-CH-1-CHL",
+      "selectedFosAddress": "DLF Cyber City, Phase 2, Gurugram, Haryana - 122002"
+    },
+    {
+      "id": "lead_1775641380819",
+      "mobile": "7777771111",
+      "name": "Preview Lead",
+      "city": "Noida",
+      "status": "CONVERTED_TO_SPRO",
+      "source": "roz_kamao_preview",
+      "selectedFosId": "fos002",
+      "selectedFosName": "Greater Noida Pari Chowk Hub",
+      "appointmentDate": "2026-04-18",
+      "otp": null,
+      "statusHistory": [
+        {
+          "status": "LEAD_CREATED",
+          "timestamp": "2026-04-08T09:43:00.819Z",
+          "note": "Lead created via OTP request"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-08T09:43:00.852Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-08T09:43:00.918Z",
+          "note": "Selected FOS: Greater Noida Pari Chowk Hub (DLGNO01-CH-2-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T09:43:00.933Z",
+          "note": "Appointment booked for 2026-04-16 at Greater Noida Pari Chowk Hub"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T09:43:00.952Z",
+          "note": "Rescheduled from 2026-04-16 to 2026-04-17"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-08T09:43:00.962Z",
+          "note": "Booking cancelled (was 2026-04-17)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T09:43:00.976Z",
+          "note": "Appointment booked for 2026-04-18 at Greater Noida Pari Chowk Hub"
+        },
+        {
+          "status": "VISITED_FOS",
+          "timestamp": "2026-04-08T09:43:00.988Z",
+          "note": "Driver visited FOS — marked by admin"
+        },
+        {
+          "status": "CONVERTED_TO_SPRO",
+          "timestamp": "2026-04-08T09:43:01.000Z",
+          "note": "Lead converted to SPro — onboarding complete"
+        }
+      ],
+      "isDeleted": false,
+      "createdAt": "2026-04-08T09:43:00.820Z",
+      "updatedAt": "2026-04-08T09:43:01.000Z",
+      "selectedFosCode": "DLGNO01-CH-2-CHL",
+      "selectedFosAddress": "Near Pari Chowk Metro Station, Greater Noida, UP - 201310"
+    },
+    {
+      "id": "lead_1775645734952",
+      "mobile": "1234567891",
+      "name": "Kus Demo",
+      "city": "Greater Noida",
+      "status": "VISITED_FOS",
+      "source": "app",
+      "selectedFosId": "fos002",
+      "selectedFosName": "Greater Noida Pari Chowk Hub",
+      "appointmentDate": "2026-04-29",
+      "otp": null,
+      "statusHistory": [
+        {
+          "status": "LEAD_CREATED",
+          "timestamp": "2026-04-08T10:55:34.953Z",
+          "note": "Lead created via OTP request"
+        },
+        {
+          "status": "REGISTERED",
+          "timestamp": "2026-04-08T10:55:50.274Z",
+          "note": "Basic details submitted"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-08T10:56:44.911Z",
+          "note": "Selected FOS: Greater Noida Pari Chowk Hub (DLGNO01-CH-2-CHL)"
+        },
+        {
+          "status": "FOS_SELECTED",
+          "timestamp": "2026-04-08T10:57:45.064Z",
+          "note": "Selected FOS: Greater Noida Pari Chowk Hub (DLGNO01-CH-2-CHL)"
+        },
+        {
+          "status": "APPOINTMENT_BOOKED",
+          "timestamp": "2026-04-08T10:58:38.866Z",
+          "note": "Appointment booked for 2026-04-29 at Greater Noida Pari Chowk Hub"
+        },
+        {
+          "status": "VISITED_FOS",
+          "timestamp": "2026-04-08T11:11:06.088Z",
+          "note": "Driver visited FOS — marked by admin"
+        }
+      ],
+      "isDeleted": false,
+      "createdAt": "2026-04-08T10:55:34.955Z",
+      "updatedAt": "2026-04-08T11:11:06.088Z",
+      "selectedFosCode": "DLGNO01-CH-2-CHL",
+      "selectedFosAddress": "Near Pari Chowk Metro Station, Greater Noida, UP - 201310"
+    }
+  ],
+  "fos": [
+    {
+      "id": "fos001",
+      "name": "Noida Sector 62 Hub",
+      "code": "DLNOI01-CH-1-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Primary",
+      "fosnName": "Noida FOSN",
+      "fosnCode": "FOSN-NOI-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Plot No. 45, Block A, Sector 62, Noida, UP - 201309",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "latitude": 28.627,
+      "longitude": 77.3664,
+      "contactPhone": "011-40010001",
+      "contactEmail": "noida62-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos002",
+      "name": "Greater Noida Pari Chowk Hub",
+      "code": "DLGNO01-CH-2-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Primary",
+      "fosnName": "Greater Noida FOSN",
+      "fosnCode": "FOSN-GNO-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Near Pari Chowk Metro Station, Greater Noida, UP - 201310",
+      "city": "Greater Noida",
+      "state": "Uttar Pradesh",
+      "latitude": 28.4744,
+      "longitude": 77.504,
+      "contactPhone": "011-40010002",
+      "contactEmail": "parichowk-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos003",
+      "name": "Ghaziabad Vaishali Hub",
+      "code": "DLGZB01-CH-1-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Secondary",
+      "fosnName": "Ghaziabad FOSN",
+      "fosnCode": "FOSN-GZB-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Sector 4, Vaishali, Ghaziabad, UP - 201010",
+      "city": "Ghaziabad",
+      "state": "Uttar Pradesh",
+      "latitude": 28.6421,
+      "longitude": 77.3407,
+      "contactPhone": "011-40010003",
+      "contactEmail": "vaishali-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos004",
+      "name": "Gurugram Cyber City Hub",
+      "code": "DLGGN01-CH-1-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Primary",
+      "fosnName": "Gurugram FOSN",
+      "fosnCode": "FOSN-GGN-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "DLF Cyber City, Phase 2, Gurugram, Haryana - 122002",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "latitude": 28.4951,
+      "longitude": 77.0886,
+      "contactPhone": "011-40010004",
+      "contactEmail": "cybercity-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos005",
+      "name": "Faridabad NIT Hub",
+      "code": "DLFBD01-CH-1-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Secondary",
+      "fosnName": "Faridabad FOSN",
+      "fosnCode": "FOSN-FBD-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "NIT 5, Near Crown Interiorz Mall, Faridabad, Haryana - 121001",
+      "city": "Faridabad",
+      "state": "Haryana",
+      "latitude": 28.4089,
+      "longitude": 77.3178,
+      "contactPhone": "011-40010005",
+      "contactEmail": "nit-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos006",
+      "name": "Delhi Dwarka Hub",
+      "code": "DLDWK01-CH-1-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Primary",
+      "fosnName": "Delhi West FOSN",
+      "fosnCode": "FOSN-DLW-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Sector 21, Dwarka, New Delhi - 110077",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "latitude": 28.5733,
+      "longitude": 77.042,
+      "contactPhone": "011-40010006",
+      "contactEmail": "dwarka-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos007",
+      "name": "Delhi Laxmi Nagar Hub",
+      "code": "DLLXN01-CH-2-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Secondary",
+      "fosnName": "Delhi East FOSN",
+      "fosnCode": "FOSN-DLE-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Near Laxmi Nagar Metro Station, East Delhi - 110092",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "latitude": 28.6304,
+      "longitude": 77.2773,
+      "contactPhone": "011-40010007",
+      "contactEmail": "laxminagar-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    },
+    {
+      "id": "fos008",
+      "name": "Noida Sector 18 Hub",
+      "code": "DLNOI02-CH-3-CHL",
+      "fosType": "Customer Hub",
+      "fosCategory": "Primary",
+      "fosnName": "Noida FOSN",
+      "fosnCode": "FOSN-NOI-01",
+      "fonName": "Delhi NCR FON",
+      "fonCode": "DL",
+      "addresses": "Near Atta Market, Sector 18, Noida, UP - 201301",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "latitude": 28.5707,
+      "longitude": 77.3219,
+      "contactPhone": "011-40010008",
+      "contactEmail": "sector18-hub@3eco.in",
+      "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
+      "isAvailable": true,
+      "isDeleted": false
+    }
+  ],
+  "fosAvailability": [
+    {
+      "id": "fa001",
+      "fosId": "fos001",
+      "date": "2026-04-09",
+      "maxCapacity": 10,
+      "currentBookings": 5,
+      "isBlocked": false
+    },
+    {
+      "id": "fa002",
+      "fosId": "fos001",
+      "date": "2026-04-10",
+      "maxCapacity": 10,
+      "currentBookings": 7,
+      "isBlocked": false
+    },
+    {
+      "id": "fa003",
+      "fosId": "fos001",
+      "date": "2026-04-11",
+      "maxCapacity": 10,
+      "currentBookings": 10,
+      "isBlocked": false
+    },
+    {
+      "id": "fa004",
+      "fosId": "fos001",
+      "date": "2026-04-12",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": true,
+      "blockReason": "Public Holiday"
+    },
+    {
+      "id": "fa005",
+      "fosId": "fos002",
+      "date": "2026-04-09",
+      "maxCapacity": 8,
+      "currentBookings": 2,
+      "isBlocked": false
+    },
+    {
+      "id": "fa006",
+      "fosId": "fos002",
+      "date": "2026-04-10",
+      "maxCapacity": 8,
+      "currentBookings": 5,
+      "isBlocked": false
+    },
+    {
+      "id": "fa007",
+      "fosId": "fos003",
+      "date": "2026-04-09",
+      "maxCapacity": 6,
+      "currentBookings": 1,
+      "isBlocked": false
+    },
+    {
+      "id": "fa008",
+      "fosId": "fos003",
+      "date": "2026-04-10",
+      "maxCapacity": 6,
+      "currentBookings": 4,
+      "isBlocked": false
+    },
+    {
+      "id": "fa009",
+      "fosId": "fos004",
+      "date": "2026-04-09",
+      "maxCapacity": 10,
+      "currentBookings": 6,
+      "isBlocked": false
+    },
+    {
+      "id": "fa010",
+      "fosId": "fos004",
+      "date": "2026-04-10",
+      "maxCapacity": 10,
+      "currentBookings": 2,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775573584067",
+      "fosId": "fos002",
+      "date": "2026-04-30",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775573721399",
+      "fosId": "fos001",
+      "date": "2026-04-13",
+      "maxCapacity": 10,
+      "currentBookings": 1,
+      "isBlocked": true
+    },
+    {
+      "id": "fa_1775641357873",
+      "fosId": "fos001",
+      "date": "2026-04-15",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775641380932",
+      "fosId": "fos002",
+      "date": "2026-04-16",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775641380952",
+      "fosId": "fos002",
+      "date": "2026-04-17",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775641380975",
+      "fosId": "fos002",
+      "date": "2026-04-18",
+      "maxCapacity": 10,
+      "currentBookings": 1,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775642408103",
+      "fosId": "fos004",
+      "date": "2026-04-30",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775643676473",
+      "fosId": "fos001",
+      "date": "2026-04-30",
+      "maxCapacity": 10,
+      "currentBookings": 0,
+      "isBlocked": false
+    },
+    {
+      "id": "fa_1775645918864",
+      "fosId": "fos002",
+      "date": "2026-04-29",
+      "maxCapacity": 10,
+      "currentBookings": 1,
+      "isBlocked": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roz-kamao-mock-server",
+  "version": "1.0.0",
+  "description": "Mock backend for Roz Kamao client preview",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "cors": "^2.8.5",
+    "moment": "^2.29.4"
+  }
+}
