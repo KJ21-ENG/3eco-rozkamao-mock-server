@@ -66,7 +66,10 @@ server.use((req, res, next) => {
 });
 
 server.use(middlewares);
-server.use(jsonServer.bodyParser);
+// Increase body limit to 10MB for base64 image uploads
+const express = require("express");
+server.use(express.json({ limit: "10mb" }));
+server.use(express.urlencoded({ limit: "10mb", extended: true }));
 
 server.get("/health", (_, res) => {
   res.json({ status: "SUCCESS", message: "OK" });
@@ -298,10 +301,16 @@ server.post("/api/lead/verify-otp", (req, res) => {
 
 /**
  * POST /api/lead/register
- * Submit basic details (name, city)
+ * Submit driver details: basic info + documents + photo
  */
 server.post("/api/lead/register", (req, res) => {
-  const { mobile, name, city } = req.body;
+  const {
+    mobile, name, city,
+    recruiterName, aadharNumber, panNumber, dlType,
+    bankAccount, bankIfsc,
+    aadharImage, panImage, dlImage, bankPassbookImage, driverPhoto,
+  } = req.body;
+
   if (!mobile || !name || !city) {
     return res.status(400).json({
       status: "FAIL",
@@ -328,15 +337,39 @@ server.post("/api/lead/register", (req, res) => {
     },
   ];
 
+  // Build update object — always set name/city/status,
+  // only set optional fields if provided
+  const updates = {
+    name: name.trim(),
+    city: city.trim(),
+    status: "REGISTERED",
+    statusHistory: updatedHistory,
+    updatedAt: moment().toISOString(),
+  };
+
+  if (recruiterName) updates.recruiterName = recruiterName.trim();
+  if (aadharNumber)  updates.aadharNumber = aadharNumber.trim();
+  if (panNumber)     updates.panNumber = panNumber.trim();
+  if (dlType)        updates.dlType = dlType;
+  if (bankAccount)   updates.bankAccount = bankAccount.trim();
+  if (bankIfsc)      updates.bankIfsc = bankIfsc.trim();
+
+  // Store base64 image flags (store a truncated marker to keep db.json small)
+  // In production these would be uploaded to S3/GCS, here we just note presence.
+  if (driverPhoto)      updates.driverPhoto = driverPhoto.substring(0, 80) + "...";
+  if (aadharImage)      updates.aadharImage = aadharImage.substring(0, 80) + "...";
+  if (panImage)         updates.panImage = panImage.substring(0, 80) + "...";
+  if (dlImage)          updates.dlImage = dlImage.substring(0, 80) + "...";
+  if (bankPassbookImage) updates.bankPassbookImage = bankPassbookImage.substring(0, 80) + "...";
+
+  // Count how many documents were uploaded
+  const docCount = [driverPhoto, aadharImage, panImage, dlImage, bankPassbookImage]
+    .filter(Boolean).length;
+  updates.documentsUploaded = docCount;
+
   db.get("leads")
     .find({ id: lead.id })
-    .assign({
-      name: name.trim(),
-      city: city.trim(),
-      status: "REGISTERED",
-      statusHistory: updatedHistory,
-      updatedAt: moment().toISOString(),
-    })
+    .assign(updates)
     .write();
 
   const updatedLead = db.get("leads").find({ id: lead.id }).value();
