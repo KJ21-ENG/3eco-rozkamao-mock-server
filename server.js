@@ -354,12 +354,13 @@ server.post("/api/lead/register", (req, res) => {
   if (bankAccount)   updates.bankAccount = bankAccount.trim();
   if (bankIfsc)      updates.bankIfsc = bankIfsc.trim();
 
-  // Store base64 image flags (store a truncated marker to keep db.json small)
-  // In production these would be uploaded to S3/GCS, here we just note presence.
-  if (driverPhoto)      updates.driverPhoto = driverPhoto.substring(0, 80) + "...";
-  if (aadharImage)      updates.aadharImage = aadharImage.substring(0, 80) + "...";
-  if (panImage)         updates.panImage = panImage.substring(0, 80) + "...";
-  if (dlImage)          updates.dlImage = dlImage.substring(0, 80) + "...";
+  // Store base64 image data
+  // driverPhoto: store full base64 so dashboard can render a thumbnail
+  // Other docs: store truncated marker (presence flag only, keeps db.json small)
+  if (driverPhoto)       updates.driverPhoto = driverPhoto;
+  if (aadharImage)       updates.aadharImage = aadharImage.substring(0, 80) + "...";
+  if (panImage)          updates.panImage = panImage.substring(0, 80) + "...";
+  if (dlImage)           updates.dlImage = dlImage.substring(0, 80) + "...";
   if (bankPassbookImage) updates.bankPassbookImage = bankPassbookImage.substring(0, 80) + "...";
 
   // Count how many documents were uploaded
