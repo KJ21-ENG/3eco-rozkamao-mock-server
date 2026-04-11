@@ -307,8 +307,7 @@ server.post("/api/lead/register", (req, res) => {
   const {
     mobile, name, city,
     recruiterName, aadharNumber, panNumber, dlType,
-    bankAccount, bankIfsc,
-    aadharImage, panImage, dlImage, bankPassbookImage, driverPhoto,
+    aadharImage, dlImage, driverPhoto,
   } = req.body;
 
   if (!mobile || !name || !city) {
@@ -351,20 +350,16 @@ server.post("/api/lead/register", (req, res) => {
   if (aadharNumber)  updates.aadharNumber = aadharNumber.trim();
   if (panNumber)     updates.panNumber = panNumber.trim();
   if (dlType)        updates.dlType = dlType;
-  if (bankAccount)   updates.bankAccount = bankAccount.trim();
-  if (bankIfsc)      updates.bankIfsc = bankIfsc.trim();
 
   // Store base64 image data
   // driverPhoto: store full base64 so dashboard can render a thumbnail
   // Other docs: store truncated marker (presence flag only, keeps db.json small)
-  if (driverPhoto)       updates.driverPhoto = driverPhoto;
-  if (aadharImage)       updates.aadharImage = aadharImage.substring(0, 80) + "...";
-  if (panImage)          updates.panImage = panImage.substring(0, 80) + "...";
-  if (dlImage)           updates.dlImage = dlImage.substring(0, 80) + "...";
-  if (bankPassbookImage) updates.bankPassbookImage = bankPassbookImage.substring(0, 80) + "...";
+  if (driverPhoto)  updates.driverPhoto = driverPhoto;
+  if (aadharImage)  updates.aadharImage = aadharImage.substring(0, 80) + "...";
+  if (dlImage)      updates.dlImage = dlImage.substring(0, 80) + "...";
 
-  // Count how many documents were uploaded
-  const docCount = [driverPhoto, aadharImage, panImage, dlImage, bankPassbookImage]
+  // Count how many documents were uploaded (photo, aadhaar, license)
+  const docCount = [driverPhoto, aadharImage, dlImage]
     .filter(Boolean).length;
   updates.documentsUploaded = docCount;
 

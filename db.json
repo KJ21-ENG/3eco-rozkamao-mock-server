@@ -313,7 +313,9 @@
       "contactEmail": "noida62-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Rajesh Kumar",
+      "supervisorPhone": "9876543201"
     },
     {
       "id": "fos002",
@@ -334,7 +336,9 @@
       "contactEmail": "parichowk-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Amit Sharma",
+      "supervisorPhone": "9876543202"
     },
     {
       "id": "fos003",
@@ -355,7 +359,9 @@
       "contactEmail": "vaishali-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Priya Singh",
+      "supervisorPhone": "9876543203"
     },
     {
       "id": "fos004",
@@ -376,7 +382,9 @@
       "contactEmail": "cybercity-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Vikram Yadav",
+      "supervisorPhone": "9876543204"
     },
     {
       "id": "fos005",
@@ -397,7 +405,9 @@
       "contactEmail": "nit-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Sunita Verma",
+      "supervisorPhone": "9876543205"
     },
     {
       "id": "fos006",
@@ -418,7 +428,9 @@
       "contactEmail": "dwarka-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Deepak Gupta",
+      "supervisorPhone": "9876543206"
     },
     {
       "id": "fos007",
@@ -439,7 +451,9 @@
       "contactEmail": "laxminagar-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Meena Rawat",
+      "supervisorPhone": "9876543207"
     },
     {
       "id": "fos008",
@@ -460,7 +474,9 @@
       "contactEmail": "sector18-hub@3eco.in",
       "operatingHours": "Mon-Sat, 9:00 AM - 6:00 PM",
       "isAvailable": true,
-      "isDeleted": false
+      "isDeleted": false,
+      "supervisorName": "Sanjay Tiwari",
+      "supervisorPhone": "9876543208"
     }
   ],
   "fosAvailability": [
